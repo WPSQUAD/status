@@ -114,19 +114,19 @@ function getStatusText(color) {
     : color == "failure"
     ? "Крупный сбой"
     : color == "partial"
-    ? "Partial Outage"
+    ? "Частичное отключение"
     : "Unknown";
 }
 
 function getStatusDescriptiveText(color) {
   return color == "nodata"
-    ? "No Data Available: Health check was not performed."
+    ? "Нет доступных данных: проверка работоспособности не выполнялась."
     : color == "success"
-    ? "No downtime recorded on this day."
+    ? "Простоев в этот день не зафиксировано."
     : color == "failure"
-    ? "Major outages recorded on this day."
+    ? "Крупные сбой зафиксирован в этот день."
     : color == "partial"
-    ? "Partial outages recorded on this day."
+    ? "Частичные отключения зафиксированы в этот день."
     : "Unknown";
 }
 
